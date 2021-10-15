@@ -20,8 +20,10 @@ public class Curso {
     private String nome;
 
     @ManyToMany
-    @JoinTable(name = "curso_aluno",
+    @JoinTable(name = "matricula",
             joinColumns = @JoinColumn( name = "curso_id"),
             inverseJoinColumns = @JoinColumn(name="aluno_id"))
     List<Aluno> alunos;
+
+
 }

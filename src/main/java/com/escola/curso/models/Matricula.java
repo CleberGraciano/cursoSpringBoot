@@ -24,5 +24,11 @@ public class Matricula {
     @JoinColumn(name = "aluno_id")
     private  Aluno aluno;
 
+    @OneToOne(mappedBy = "matricula")
+    private Pagamento pagamento;
+
+
+
+
 
 }
